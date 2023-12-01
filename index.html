@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css" />
+        <title></title>
+    </head>
+
+    <body>
+        <section class="calculator">
+            <br>
+            <!--<section class="display" id="calc_display">0
+            </section>-->
+            <input type="text" class="display" id="calc_display" disabled="disabled">
+            </input>
+            <br>
+            <section class="base">
+                <section class="panel_left">
+                    <section class="number">
+                        <button class="button_gray" onclick="erase()">AC</button>
+                        <button class="button_gray">()</button>
+                        <button class="button_gray" onclick="operator('%')">%</button>
+                        <button class="button" onclick="add(7)">7</button>
+                        <button class="button" onclick="add(8)">8</button>
+                        <button class="button" onclick="add(9)">9</button>                        
+                        <button class="button" onclick="add(4)">4</button>
+                        <button class="button" onclick="add(5)">5</button>
+                        <button class="button" onclick="add(6)">6</button>                        
+                        <button class="button" onclick="add(1)">1</button>
+                        <button class="button" onclick="add(2)">2</button>
+                        <button class="button" onclick="add(3)">3</button>                        
+                        <button class="button" onclick="add(0)">0</button>
+                        <button class="button" onclick="add('.')">.</button>
+                        <button class="button_gray"><</button>
+                    </section>
+                </section>
+                <section class="panel_right">
+                    <div class="operators">
+                        <button class="button_op" onclick="operator('/')">/</button>
+                        <button class="button_op" onclick="operator('*')">*</button>
+                        <button class="button_op" onclick="operator('-')">-</button>
+                        <button class="button_op" onclick="operator('+')">+</button>
+                        <button class="button_equal" onclick="calculate()">=</button>
+                    </div>
+                </section>
+            </section>     
+        </section>
+    </body>
+
+    <script src="app.js"></script>
+
+</html>
